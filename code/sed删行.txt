@@ -1,0 +1,9 @@
+删掉某一行
+sed -i '1d' filename
+
+删掉含有特定字符的行
+sed -i '/string/d' file
+
+替换某一行的内容
+sed '行号c 新的内容' 要处理的文件
+sed '225c new\ttest' genes_backup.tsv

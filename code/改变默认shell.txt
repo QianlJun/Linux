@@ -1,0 +1,5 @@
+在安装有fish的情况下
+
+chsh -s /usr/bin/fish
+或者
+chsh -s /usr/bin/bash

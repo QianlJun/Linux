@@ -1,0 +1,5 @@
+显示x行
+sed -n 'xp' filename
+
+显示x到y行的内容
+sed -n 'x,yp' filename 

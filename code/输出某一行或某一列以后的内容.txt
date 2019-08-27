@@ -1,0 +1,5 @@
+打印三行后的内容
+awk 'NR>3{print}' file.txt
+
+打印三列后的内容
+awk '{$1=$2=$3="";print}' file.txt

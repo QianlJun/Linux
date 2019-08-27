@@ -1,0 +1,4 @@
+lsblk
+sudo mount -t ntfs-3g /dev/sdc2 kk
+
+sudo mount /dev/sdc2

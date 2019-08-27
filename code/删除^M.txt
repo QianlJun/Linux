@@ -1,0 +1,12 @@
+第一种方法
+vim file.txt
+:e ++ff=unix %
+:%s/^M$//g
+注意：^M的输入方式是Ctrl+v，Ctrl+m，是一个字符，不是两个字符。
+
+另外，还要注意是否有“”
+如果有，也需要删除
+
+第二种办法
+sed -i 's/^M//g' filename
+注意: ^M的输入方式是 Ctrl + v ，然后Ctrl + M 

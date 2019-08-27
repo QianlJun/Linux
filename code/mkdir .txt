@@ -1,0 +1,1 @@
+mkdir -p ATAC-Seq/{data/raw_data,analysis,script,ref}
