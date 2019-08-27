@@ -1,0 +1,80 @@
+a：在行尾插入
+shift+a：从行中跳到行尾插入
+shift+i: 从行中跳到行首插入
+o: 在本行的下一行插入
+shift+o：在本行的上一行插入
+s: 删除一个字符
+vim配置文件是主目录.vim下的vimrc
+x: 删除当前字符
+d: 后面加相关的动作
+w: 把光标移动到下一个词
+b: back把光标回到上一个词
+f: 寻找下一个符合的字符
+/：搜索
+n: 下一条搜索信息
+N: 上一条搜索信息
+:split:上下分屏
+:vsplit:左右分屏
+: color+空格+tab：修改vim的配色
+
+
+noremap a b： 用b键代替a键
+map S :w<CR>: 用S代替保存，<CR>代表回车键
+map s <nop>: 取消s的删除功能
+：source $MYVIMRC ： 重新加载配置文件但不退出vim
+syntax on : 打开语法高亮
+set number ：显示行号
+set cursorline： 在当前光标显示一条线
+set wrap: 字符不会超出当前窗口
+set showcmd：在下面显示命令
+set wildmenu:  在普通模式下输入指令按tab键能选择
+set hlsearch: 高亮搜索结果
+set incsearch: 边输边高亮
+set ignorecase:忽略搜索大小写
+set smartcase: 有大写的时候不忽略大小写
+
+
+<operation><motion>：操作+动作
+d+右方向键： 向右删除一个字符
+d +3 + 右方向键: 向右删除3个字符
+dd: 剪切
+p: 粘贴
+y: 复制
+y+右：复制往右一个字符
+y+3+右: 复制往右3个字符
+c:删除并进入写入模式
+c+6+右：删除右边6个字符并进入写入模式
+c+w：删除一个词并进入插入模式
+c+i+w：在词中，删除词
+c+i+" :删除引号中所有内容并进入插入模式
+d+i+":把双引号的中的内容删除不会进入写入模式
+y+i+"：复制双引号中的内容
+f+v：找到下一个v的为止
+d+f+v:从目前光标为止到下一个v的内容都删除，不进入写入模式
+
+修改vim配色与安装插件
+1.安装vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+2.安装vim-airline
+ call plug#begin('~/.vim/plugged')
+ 
+ Plug 'vim-airline/vim-airline' 单引号中是github网址的后半部分
+ Plug 'connorholyday/vim-snazzy'
+ 
+ call plug#end()
+保存后重新打开
+: PlugInstall
+
+
+
+
+
+
+
+
+
+
+
+
+
