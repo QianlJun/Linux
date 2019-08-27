@@ -1,0 +1,1 @@
+unzip -o -d /home/qj/annovar/humandb hg38_1000g2015aug.zip

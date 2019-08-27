@@ -1,0 +1,1 @@
+mv -t /home/qj/annovar/humandb/ hg38_dbnsfp30a.txt

@@ -1,0 +1,19 @@
+#yum -y install perl-CPAN
+#perl -MCPAN -e shell
+
+
+
+安装前需要先联上线，并且要取得root权限。　 
+perl　-MCPAN　-e　shell
+
+获得帮助　 
+cpan>h　 
+
+列出CPAN上所有模块的列表　 
+cpan>m　 
+
+
+安装模块　 
+cpan>install　DBI　 
+自动完成DBI模块从下载到安装的全过程。
+

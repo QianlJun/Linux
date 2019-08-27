@@ -1,0 +1,6 @@
+pwd
+ls -lhtr
+cd annovar/
+perl ./
+perl ./annotate_variation.pl --downdb --webfrom annovar --buildver hg19 exac03 humandb/
+wgt http:/
