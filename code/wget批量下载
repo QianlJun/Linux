@@ -1,6 +1,7 @@
-wget -c -i files.txt
+wget -nc -c -i files.txt
 
-
+-nc可以跳过已经下载的文件
+-c可以断点续连
 cat files.txt 
 http://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/RF00001.fa.gz
 http://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/RF00002.fa.gz
