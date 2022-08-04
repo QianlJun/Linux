@@ -1,0 +1,9 @@
+wget -c -i files.txt
+
+
+cat files.txt 
+http://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/RF00001.fa.gz
+http://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/RF00002.fa.gz
+http://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/RF00003.fa.gz
+http://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/RF00004.fa.gz
+http://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/RF00005.fa.gz
