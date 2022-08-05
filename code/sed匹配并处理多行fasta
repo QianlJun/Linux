@@ -1,0 +1,8 @@
+zcat Homo_sapiens.GRCh38.ncrna.fa.gz | sed -n '/sRNA\|tRNA\|rRNA\|snoRNA\|snRNA/{p;n;p}'
+
+
+-n表示只输出匹配的行
+
+p表示打印当前行
+n表示读取下一行，并覆盖掉前一行
+p打印当前存储的一行
